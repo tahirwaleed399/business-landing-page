@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: tahoma;
+}
+
+html {
+    font-size: 62.5%;
+    // overflow-x: hidden;
+}
+
+@import "variable";
+@import "header";
+@import "creations";
+@import "columns";
+@import "girl";
+@import "rows";

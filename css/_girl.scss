@@ -1,0 +1,94 @@
+section.bachi {
+    background-color: $blue;
+    position: relative;
+    padding: 9rem;
+    margin-top: 15rem;
+    .bachi-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 46px;
+            color: $main-color;
+            font-weight: 900;
+        }
+        small {
+            font-size: 16px;
+            margin-bottom: 3rem;
+            color: $main-color;
+        }
+        p {
+            font-size: 24px;
+            color: $main-color;
+        }
+        .btn {
+            padding: 1rem 4rem;
+        }
+    }
+    .bachi-img {
+        img {
+            position: absolute;
+            top: -60px;
+            right: 0;
+            bottom: 0;
+            height: calc(100% + 60px);
+            width: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    section.bachi {
+        .bachi-img {
+            height: 342px;
+            width: 100%;
+            // background-color: yellow;
+            // position: relative;
+            img {
+                // width: 95%;
+                position: static;
+                position: absolute;
+                top: -60px;
+                // height: 500px;
+                height: 442px;
+                width: 50vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section.bachi {
+        .bachi-img {
+            // height: 480px;
+            img {
+                width: 70vw;
+                // height: 480px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section.bachi {
+        padding: 2rem;
+        .bachi-content {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 19px;
+            }
+        }
+        .bachi-img {
+            height: 480px;
+            img {
+                width: 100vw;
+                height: 480px;
+            }
+        }
+    }
+}

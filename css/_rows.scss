@@ -1,0 +1,145 @@
+.section-img {
+    margin-top: 10rem;
+    .img-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin: 0 1rem;
+        img {
+            height: 300px;
+        }
+    }
+    h1 {
+        color: $main-color;
+        font-size: 46px;
+        font-weight: 800;
+    }
+    i {
+        font-size: 50px;
+        margin: 5rem 0 2rem 0;
+    }
+    p {
+        color: $main-color;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.i1 {
+    color: $pink;
+}
+
+.i2 {
+    color: $see-green;
+}
+
+.i3 {
+    color: $yellow;
+}
+
+// footer 
+footer {
+    background-color: $lightpink;
+    padding: 8% 8% 4% 8%;
+    margin-top: 12rem;
+    .row {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .links {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $main-color;
+                font-size: 24px;
+                font-weight: 500;
+                transition: all 0.4s ease;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .f-content {
+        .input {
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            // background-color: red;
+        }
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: $main-color;
+            border-bottom: 1px solid $main-color;
+            width: 60%;
+            margin-right: 2rem;
+            padding: 1rem;
+        }
+    }
+}
+
+.icons {
+    // width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    i {
+        font-size: 50px;
+        color: $see-green;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section-img {
+        .img-col {
+            margin: 2rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        .row {
+            justify-content: space-between;
+        }
+        .logo {
+            img {
+                height: 80px;
+            }
+        }
+        .f-content {
+            // background-color: red;
+            margin: auto;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .input {
+                // background-color: red;
+                justify-content: center;
+            }
+        }
+        .links li a {
+            font-size: 18px;
+        }
+    }
+    .icons {
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .section-img {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

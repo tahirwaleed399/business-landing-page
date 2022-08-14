@@ -1,0 +1,125 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.line {
+    display: none;
+}
+
+#nav-container {
+    margin: 0 !important;
+    width: 100vw;
+}
+
+#logo {
+    height: 100px;
+    padding: 1rem 0;
+}
+
+#navbar {
+    background: transparent;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    padding: 0 4%;
+    z-index: 100;
+}
+
+#links {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#nav-anchor {
+    color: $main-color;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 4rem;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.content {
+    // height: calc(100vh - 150px);
+    height: 100vh;
+    // top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+        color: $main-color;
+        font-weight: 800;
+        font-size: 13rem;
+    }
+    p {
+        font-size: 20px;
+        color: $main-color;
+        margin: 0rem 0 2rem 0;
+    }
+}
+
+.btn {
+    padding: 1rem 3.3rem;
+    font-size: 12px;
+    border-radius: 30px;
+    margin-right: 2rem;
+    color: #fff;
+    font-weight: 600;
+    // display: inline;
+}
+
+.btn1 {
+    background-color: $see-green;
+}
+
+.btn2 {
+    background-color: $orange;
+}
+
+@media only screen and (max-width: 992px) {
+    #navbar {
+        background: white;
+        z-index: 100;
+    }
+    #logo {
+        height: 80px;
+        padding: 1rem 0;
+    }
+    #nav-anchor {
+        margin: 1rem;
+    }
+    .line {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        align-items: center;
+        h1 {
+            font-size: 8rem;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        p {
+            margin: 1rem 0 2rem 0;
+        }
+        .btn {
+            padding: .7rem 2rem;
+            margin: 0 1rem;
+        }
+    }
+}
